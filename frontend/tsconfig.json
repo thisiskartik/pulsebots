@@ -1,0 +1,34 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
+		"paths": {
+			"@Public/*": ["./public/*"],
+			"@General/*": ["./src/components/General/*"],
+			"@Auth/*": ["./src/components/Auth/*"],
+			"@Form/*": ["./src/components/Form/*"],
+			"@ChatBots/*": ["./src/components/ChatBots/*"],
+			"@Chats/*": ["./src/components/Chats/*"],
+			"@KnowledgeBases/*": ["./src/components/KnowledgeBases/*"],
+			"@Utils/*": ["./src/utils/*"]
+		}
+	},
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+	"exclude": ["node_modules"]
+}
